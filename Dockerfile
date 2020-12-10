@@ -7,8 +7,9 @@ RUN git clone --progress https://github.com/v2fly/v2ray-core.git . && \
 FROM alpine
 COPY --from=builder /tmp/v2ray.tgz /tmp
 RUN tar xvfz /tmp/v2ray.tgz -C /usr/bin && \
-    rm -rf /tmp/v2ray.tgz
+    rm -rf /tmp/v2ray.tgz && \
+    cp v2ray v2node
 
-ADD v2ray.sh /v2ray.sh
-RUN chmod +x /v2ray.sh
-CMD /v2ray.sh
+ADD v2node.sh /v2node.sh
+RUN chmod +x /v2node.sh
+CMD /v2node.sh
