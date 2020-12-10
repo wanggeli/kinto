@@ -1,14 +1,14 @@
 {
-    "name": "v2ray-heroku",
-    "description": "deploy v2ray to heroku",
-    "keywords": ["v2ray"],
+    "name": "v2node-heroku",
+    "description": "deploy v2node to heroku",
+    "keywords": ["v2node"],
     "env": {
         "UUID": {
-            "description": "v2ray UUID",
+            "description": "UUID",
             "value": "c95ef1d4-f3ac-4586-96e9-234a37dda068"        
         },
         "PROTOCOL": {
-            "description": "v2ray protocol, vmess or vless",
+            "description": "protocol",
             "value": "vmess"
         }
     },
