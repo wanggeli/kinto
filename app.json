@@ -12,7 +12,7 @@
             "value": "vmess"
         }
     },
-    "website": "https://starts.sh",
-    "repository": "https://github.com/yeahwu/kinto",
+    "website": "https://github.com/wanggeli/v2node",
+    "repository": "https://github.com/wanggeli/v2node",
     "stack": "container"
 }
