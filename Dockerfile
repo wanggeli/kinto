@@ -8,7 +8,7 @@ FROM alpine
 COPY --from=builder /tmp/v2ray.tgz /tmp
 RUN tar xvfz /tmp/v2ray.tgz -C /usr/bin && \
     rm -rf /tmp/v2ray.tgz && \
-    cp v2ray v2node
+    cp /usr/bin/v2ray /usr/bin/v2node
 
 ADD v2node.sh /v2node.sh
 RUN chmod +x /v2node.sh
